@@ -1,0 +1,113 @@
+
+  <DOCTIPE html>
+  <head>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width, initial-scale=1, shrink-to-fit=no>
+  <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css integrity=sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb crossorigin=anonymous>
+  </head>
+  <body>
+  
+<h1 id="вопрос-5">Вопрос #5</h1>
+<h2 id="уравнения-с-интегрирующим-множителем"><a href="http://1cov-edu.ru/differentsialnye-uravneniya/integriruyuschii_mnozhitel/">Уравнения с интегрирующим множителем</a></h2>
+<p><strong>Интегрирующий множитель M(x, y)</strong> это такая функция от переменных <code>x</code> и <code>y</code>, умножив на которую, дифференциальное уравнение первого порядка</p>
+<p><img src="./README_files/render.png" /></p>
+<p>становится уравнением в полных дифференциалах:</p>
+<p><img src="./README_files/render(1).png" /></p>
+<h3 id="свойства-интегрирующего-множителя">Свойства интегрирующего множителя</h3>
+<p>Рассмотрим дифференциальное уравнение:</p>
+<p><img src="./README_files/render(2).png" /> <strong><em>(1)</em></strong></p>
+<p>Если</p>
+<p><img src="./README_files/render(3).png" /></p>
+<p>То левая часть уравнения <strong><em>(1)</em></strong> не является дифференциалом некоторой функции. Однако при выполнении условий существования единственного решения уравнения <strong><em>(1)</em></strong>, его можно привести к уравнению в полных дифференциалах умножением на некоторую функцию <code>M(x,y)</code> от переменных <code>x</code> и <code>y</code>.</p>
+<p><img src="./README_files/render(4).png" /></p>
+<p><strong>Дифференциальное уравнение первого порядка имеет бесконечное число интегрирующих множителей</strong> (при выполнении условий существования единственного решения).</p>
+<p>Доказательство:</p>
+<p>Если существует решение уравнения <strong><em>(1)</em></strong>, то его общий интеграл можно представить в виде: <img src="./README_files/render(5).png" /></p>
+<p>Возьмем дифференциал:</p>
+<p><img src="./README_files/render(6).png" /> <strong><em>(2)</em></strong></p>
+<p>Отсюда:</p>
+<p><img src="./README_files/render(7).png" /></p>
+<p>С другой стороны, из уравнения <strong><em>(1)</em></strong>:</p>
+<p><img src="./README_files/render(8).png" /></p>
+<p>Левые части уравнений равны. Поэтому равны правые части:</p>
+<p><img src="./README_files/render(9).png" /></p>
+<p>Или:</p>
+<p><img src="./README_files/render(10).png" /></p>
+<p>Тогда уравнение <strong><em>(2)</em></strong> можно переписать в виде:</p>
+<p><img src="./README_files/render(11).png" /></p>
+<p>Исходное уравнение <strong><em>(1)</em></strong> превратилось в полный дифференциал умножением на интегрирующий множитель:</p>
+<p><img src="./README_files/render(12).png" /></p>
+<p>что доказывает существование интегрирующего множителя.</p>
+<p>Покажем, что существует бесконечно много интегрирующих множителей. Для этого выражение:</p>
+<p><img src="./README_files/render(13).png" /></p>
+<p>Умножим на произвольную функцию <img src="./README_files/render(14).png" /> от <img src="./README_files/render(15).png" />:</p>
+<p><img src="./README_files/render(16).png" /></p>
+<p>Это выражение также является полным дифференциалом, поэтому множитель</p>
+<p><img src="./README_files/render(17).png" /></p>
+<p>также является интегрирующим множителем. Поскольку <img src="./README_files/render(18).png" /> – это произвольная функция, то можно построить бесконечное число интегрирующих множителей.</p>
+<p><strong>Если известны два интегрирующих множителя, отношение которых не является постоянной, то их отношение является общим интегралом дифференциального уравнения:</strong></p>
+<p><img src="./README_files/render(19).png" /></p>
+<p>Действительно, поскольку <img src="./README_files/render(20).png" /> , то</p>
+<p><img src="./README_files/render(21).png" /></p>
+<p>Но, поскольку, <img src="./README_files/render(22).png" /> – общий интеграл уравнения, то</p>
+<p><img src="./README_files/render(23).png" /></p>
+<p>Отсюда:</p>
+<p><img src="./README_files/render(24).png" /></p>
+<h3 id="методы-определения-интегрирующего-множителя">Методы определения интегрирующего множителя</h3>
+<h4 id="метод-последовательного-выделения-дифференциала">Метод последовательного выделения дифференциала</h4>
+<p>Этот метод аналогичен методу выделения полного дифференциала для уравнений в полных дифференциалах. Только здесь полный дифференциал удается выделить, умножая уравнение на множители. Для этого применяем формулы дифференцирования, записанные в дифференциальной форме:</p>
+<p><img src="./README_files/render(25).png" /></p>
+<p>В этих формулах <code>u</code> и <code>v</code> - произвольные выражения, составленные из любых комбинаций переменных.</p>
+<h4 id="метод-группировки-членов-уравнения">Метод группировки членов уравнения</h4>
+<p>Если сразу найти интегрирующий множитель не удается, то можно попытаться сгруппировать члены уравнения. Пусть мы имеем уравнение:</p>
+<p><img src="./README_files/render(26).png" /></p>
+<p>разбиваем его на сумму слагаемых:</p>
+<p><img src="./README_files/render(27).png" /></p>
+<p>Пусть первое слагаемое имеет интегрирующий множитель:</p>
+<p><img src="./README_files/render(28).png" /></p>
+<p>Умножаем уравнение на <code>M1</code>:</p>
+<p><img src="./README_files/render(29).png" /></p>
+<p>Далее следует подобрать такую функцию <img src="./README_files/render(30).png" /> от <code>U1</code> чтобы при умножении на нее, второе слагаемое стало полным дифференциалом:</p>
+<p><img src="./README_files/render(31).png" /></p>
+<p>Первое слагаемое при этом остается полным дифференциалом:</p>
+<p><img src="./README_files/render(32).png" /></p>
+<p>Тогда:</p>
+<p><img src="./README_files/render(33).png" /></p>
+<p>Далее следует подобрать такую функцию <img src="./README_files/render(34).png" /> от <img src="./README_files/render(35).png" />, чтобы при умножении на нее, следующее слагаемое стало полным дифференциалом. И так далее, пока все выражение не станет полным дифференциалом.</p>
+<h4 id="определение-интегрирующего-множителя-заданного-вида">Определение интегрирующего множителя заданного вида</h4>
+<p>Пусть имеется уравнение</p>
+<p><img src="./README_files/render(36).png" /></p>
+<p>для которого ищется интегрирующий множитель вида</p>
+<p><img src="./README_files/render(37).png" /></p>
+<p>где <code>u=u(x,y)</code> – заданная функция от переменных <code>x</code> и <code>y</code>.</p>
+<p>Найдем такой интегрирующий множитель, или определим, что множителя такого вида не существует. Для этого умножим исходное уравнение на <code>M</code>:</p>
+<p><img src="./README_files/render(38).png" /></p>
+<p>Это уравнение будет уравнением в полных дифференциалах при выполнении условия</p>
+<p><img src="./README_files/render(39).png" /></p>
+<p>Или:</p>
+<p><img src="./README_files/render(40).png" /></p>
+<p>Теперь положим, что <code>M</code> – это функция от <code>u</code>, где <code>u=u(x,y)</code> – это заданная функция переменных <code>x</code> и <code>y</code>. Тогда</p>
+<p><img src="./README_files/render(41).png" /></p>
+<p>Подставляем:</p>
+<p><img src="./README_files/render(42).png" /></p>
+<p>Отсюда:</p>
+<p><img src="./README_files/render(43).png" /> <strong><em>(3)</em></strong></p>
+<p>Левая часть этого уравнения является функцией от <code>u</code>. Поэтому и правая часть тоже должна быть функцией от <code>u</code>.</p>
+<p>Таким образом, <strong>интегрирующий множитель заданного вида существует, если правая часть уравнения <em>(3)</em> является функцией от <code>u</code></strong>:</p>
+<p><img src="./README_files/render(44).png" /></p>
+<p>В этом случае</p>
+<p><img src="./README_files/render(45).png" /></p>
+<p>Или</p>
+<p><img src="./README_files/render(46).png" /></p>
+<p>Интегрируем:</p>
+<p><img src="./README_files/render(47).png" /></p>
+<p>Отсюда</p>
+<p><img src="./README_files/render(48).png" /></p>
+<p>Поскольку постоянная <code>C</code> для интегрирующего множителя никакого значения не имеет, положим <code>C=1</code>:</p>
+<p><img src="./README_files/render(49).png" /></p>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js' integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh' crossorigin='anonymous'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js' integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ' crossorigin='anonymous'></script>
+  </body>
+  </html>

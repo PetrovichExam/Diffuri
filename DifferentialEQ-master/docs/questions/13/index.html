@@ -1,0 +1,25 @@
+
+  <DOCTIPE html>
+  <head>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width, initial-scale=1, shrink-to-fit=no>
+  <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css integrity=sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb crossorigin=anonymous>
+  </head>
+  <body>
+  
+<h1 id="вопрос-13">Вопрос #13</h1>
+<h2 id="линейные-неоднородные-дифференциальные-уравнения-с-постоянными-коэффициентами-и-со-специальной-правой-частью."><a href="https://studfiles.net/preview/4397061/page:7/">Линейные неоднородные дифференциальные уравнения с постоянными коэффициентами и со специальной правой частью.</a></h2>
+<p>Линейным неоднородным дифференциальным уравнением (ЛНДУ) <code>n</code>-го порядка с постоянными коэффициентами называется уравнение вида<br> <img src="README_files/render.png" /> <strong><em>(1)</em></strong><br> где <code>ai</code>, <code>i=1..n</code> – действительные числа; <code>y = f(x)</code> – данная функция.</p>
+<p>Рассмотрим ЛНДУ второго порядка<br> <img src="README_files/render_1.png" /> <strong><em>(2)</em></strong><br> и соответствующее ему однородное уравнение (ЛОДУ)<br> <img src="README_files/render_2.png" /> <strong><em>(3)</em></strong><br> Пусть <code>y1</code> и <code>y2</code> – фундаментальная система решений уравнения <strong><em>(3)</em></strong>, тогда<br> <img src="README_files/render_3.png" /> <strong><em>(4)</em></strong><br> есть общее решение уравнения <strong><em>(3)</em></strong></p>
+<h3 id="теорема-о-структуре-общего-решения-лнду">Теорема (о структуре общего решения ЛНДУ)</h3>
+<p>Общее решение неоднородного уравнения <strong><em>(2)</em></strong> равно сумме общего решения соответствующего однородного <strong><em>(3)</em></strong> и частного решения неоднородного уравнения <strong><em>(2)</em></strong>:<br> <code>y_{он} = y_{оо} + y_{чн}</code><br> <strong>Доказательство.</strong> Так как <code>y_{оо}</code> - общее решение уравнения <strong><em>(3)</em></strong>, то по определению решения эта функция обращает уравнение <strong><em>(3)</em></strong> в верное равенство. Так какучн- частное решение уравнения <strong><em>(2)</em></strong>, то функция <code>у_{чн}</code> также обращает это уравнение в тождество. Имеем два тождества:<br> <code>у''_{оо} + a1*y'_{оо} + a2*y_{оо} ≡ 0</code><br> <code>(y_{чн})'' + a1(y_{чн})'+ a2*y_{чн} ≡ f(x)</code><br> найдем их сумму:<br> <code>(y''_{оо} + y''_{чн})+ a1(y'_{оо} + y'_{чн})+ a2(y_{оо} + y_{чн}) ≡ f(x)</code> или<br> <code>(y_{оо} + y_{чн})''+ a1(y_{оо} + y_{чн})' + a2(yоо+yчн) ≡ f(x)</code><br> Следовательно, <code>y_{он} = y_{оо} + y_{чн}</code> является общим решением уравнения <strong><em>(2)</em></strong>.</p>
+<h3 id="нахождение-частного-решения-лнду-со-специальной-правой-частью">Нахождение частного решения ЛНДУ со специальной правой частью</h3>
+<p>В том случае, когда правая часть дифференциальных уравнений <strong><em>(1)</em></strong> и <strong><em>(2)</em></strong> в общем случае имеет вид<br> <img src="README_files/render_4.png" /><br> где <code>Pm(x)</code> и <code>Qn(x)</code> - многочлены переменной <code>x</code> степеней <code>m</code> и <code>n</code>; <code>α, β</code> - действительные числа, используется метод неопределенных коэффициентов (или метод подбора).<br> Частное решение <code>y_{чн}</code> дифференциального уравнения <strong><em>(2)</em></strong> зависит в каждом конкретном случае от вида функции <code>f(x)</code> и от выражения <code>α±iβ</code>(где i = sqrt(−1) ), которое сравнивается с корнями характеристического уравнения, составленного для соответствующего ЛОДУ <strong><em>(3)</em></strong>. Возможны случаи:</p>
+<p><strong>1. Если <code>α±iβ</code> является корнем кратности <code>r</code> характеристического уравнения</strong> <img src="README_files/render_5.png" /> <strong><em>(5)</em></strong> (<code>r</code> – означает сколько раз <code>α±iβ</code> совпадет с корнями характеристического уравнения). Тогда частное решение находится в виде <code>y_{чн}</code> = <img src="README_files/render_6.png" /><br> где <code>Ml(x)</code> и <code>Nl(x)</code> - многочлены со своими неопределенными коэффициентами, при этом <code>l = max{m, n}</code>.</p>
+<p><strong>2. Если <code>α±iβ</code> не является корнем характеристического уравнения</strong> <strong><em>(5)</em></strong>, то <code>r = 0</code> и <code>x0=1</code>, тогда частное решение <code>y_{чн}</code> имеет вид<br> <code>y_{чн}</code> = <img src="README_files/render_7.png" /></p>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js' integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh' crossorigin='anonymous'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js' integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ' crossorigin='anonymous'></script>
+  </body>
+  </html>

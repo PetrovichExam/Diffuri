@@ -1,0 +1,52 @@
+
+  <DOCTIPE html>
+  <head>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width, initial-scale=1, shrink-to-fit=no>
+  <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css integrity=sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb crossorigin=anonymous>
+  </head>
+  <body>
+  
+<h1 id="вопрос-6">Вопрос #6</h1>
+<h2 id="уравнения-порядка-выше-первого"><a href="https://studfiles.net/preview/2203351/">Уравнения порядка выше первого</a></h2>
+<p>Дифференциальные уравнения порядка выше первого называются ДУ высших порядков. ДУ второго порядка в общем случае записывается в виде</p>
+<p><code>F(x;y;y';y'',....)=0</code></p>
+<p>Или, если это возможно, в виде, разрешенном относительно старшей производной:</p>
+<p><code>y''=f(x;y;y')</code></p>
+<p><strong>Решением ДУ</strong> <code>y''=f(x;y;y')</code> называется всякая функция <code>у=j(x)</code>, которая при подстановке в уравнение обращает его в тождество.</p>
+<p><strong>Общим решением ДУ</strong> <code>y''=f(x;y;y')</code> называется функция <code>у=j(x,c1,c2)</code>, где - <code>c1</code> и <code>c2</code> = <code>const</code></p>
+<p>Аналогичные понятия и определения имеют место для ДУ <code>n-го</code> порядка, которое в общем виде записывается как <code>F(x;y;y';y'';…; )=0</code>.</p>
+<h2 id="случаи-понижения-порядка"><a href="https://studfiles.net/preview/2203351/">Случаи понижения порядка</a></h2>
+<p>Одним из методов интегрирования ДУ высших порядков является метод понижения порядка. Суть метода состоит в том, что с помощью замены переменной данное ДУ сводится к уравнению, порядок которого ниже.</p>
+<p>Рассмотрим <strong>3</strong> типа уравнений, допускающих понижение порядка.</p>
+<p><strong>1</strong> Пусть дано уравнение <code>y''=f(x)</code>. Порядок можно понизить, введя новую функцию <code>p(x)</code>, положив <code>y'=p(x)</code>. Тогда <code>y''=p'(x)</code> и получаем ДУ первого порядка: <code>p'=f(x)</code>. Решив его, т.е. найдя функцию <code>р=р(х)</code>, решим уравнение <code>у'=р(х)</code>. Получим общее решение заданного уравнения <code>y''=f(x)</code>.</p>
+<p><strong>2</strong> Пусть дано уравнение <code>y''=f(x;y')</code>, не содержащее явно искомой функции <code>у</code>.</p>
+<p>Обозначим <code>у'=р</code>, где <code>р=р(х)</code> – новая неизвестная функция. Тогда <code>у''=p'</code> и уравнение <code>y''=f(x;y')</code> принимает вид <code>р'=f(x;p)</code>. Пусть <code>р=j(x,c1)</code> - общее решение полученного ДУ первого порядка. Заменяя функцию <code>р</code> на <code>у'</code>, получаем ДУ: <code>y'=j(x,c1)</code>. Оно имеет вид <code>y''=f(x)</code>. Для отыскания <code>у</code> достаточно проинтегрировать последнее уравнение. Общее решение уравнения <code>y''=f(x;y')</code> будет иметь вид</p>
+<p>у= <img src="https://studfiles.net/html/2706/288/html_CZ2r9NzX6K.1HUU/img-LD9D5R.png" name="Object124" align="absmiddle" width="108" height="29"></p>
+<p>Частным случаем уравнения <code>y''=f(x;y')</code> является уравнение <code>y''=f(y')</code>, не содержащее также и независимую переменную <code>х</code>. Оно интегрируется тем же способом: <code>y'=p(x)</code>,</p>
+<p><strong>3</strong> Рассмотрим уравнение <code>y''=f(y;y')</code>, которое не содержит явно независимой переменной <code>х</code>.</p>
+<p>Для понижения порядка уравнения введем новую функцию <code>р=р(у)</code>, зависящую от переменной <code>у</code>, полагая <code>y'=p</code>. Дифференцируем это равенство по <code>х</code>, учитывая, что <code>р=р(у(х))</code>:</p>
+<p><img src="https://studfiles.net/html/2706/288/html_CZ2r9NzX6K.1HUU/img-rv1pyG.png" name="Object126" align="absmiddle" width="284" height="44"> , т.е. <code>y''</code> = <img src="https://studfiles.net/html/2706/288/html_CZ2r9NzX6K.1HUU/img-khCrKp.png" name="Object128" align="absmiddle" width="43" height="44"></p>
+<p>Теперь уравнение <code>y''=f(y;y')</code> запишется в виде <img src="https://studfiles.net/html/2706/288/html_CZ2r9NzX6K.1HUU/img-uWxEdt.png" name="Object129" align="absmiddle" width="43" height="44"> = <code>f(y,p)</code>.</p>
+<p>Пусть <code>р=j(x,c1)</code> является общим решением этого ДУ первого порядка. Заменяя функцию <code>р(у)</code> на <code>y'</code>, получаем <code>y'=j(x1,c1)</code>- ДУ с разделяющимися переменными. Интегрируя его, находим общий интеграл уравнения <code>y''=f(y;y')</code>:</p>
+<p><img src="https://studfiles.net/html/2706/288/html_CZ2r9NzX6K.1HUU/img-cS63sb.png" name="Object132" align="absmiddle" width="116" height="45"></p>
+<p>Частным случаем уравнения <code>y''=f(y;y')</code> является ДУ <code>y''=f(y)</code>. Такое уравнение решается при помощи аналогичной подстановки: <code>y'=p(y)</code>, <code>y''</code> = <img src="https://studfiles.net/html/2706/288/html_CZ2r9NzX6K.1HUU/img-dqqxME.png" name="Object133" align="absmiddle" width="43" height="44">.</p>
+<h2 id="задача-коши-и-условия-существования-и-единственности-ее-решения"><a href="http://textarchive.ru/c-2033152.html">Задача Коши и условия существования и единственности ее решения</a></h2>
+<p>Пусть дано ДУ <img src="http://textarchive.ru/images/1017/2033152/301aba65.gif" name="Object3" align="ABSMIDDLE" width="191" height="23">, <img src="http://textarchive.ru/images/1017/2033152/6a4879eb.gif" name="Object4" align="ABSMIDDLE" width="170" height="23"> и начальные условия: <img src="http://textarchive.ru/images/1017/2033152/8c3dd530.gif" name="Object5" align="ABSMIDDLE" width="316" height="26"> числа <img src="http://textarchive.ru/images/1017/2033152/363dcc91.gif" name="Object6" align="ABSMIDDLE" width="190" height="31"></p>
+<p>Требуется найти непрерывную и <code>n</code> раз дифференцируемую функцию <img src="http://textarchive.ru/images/1017/2033152/8d44bfab.gif" name="Object7" align="ABSMIDDLE" width="136" height="20">:</p>
+<ol type="1">
+<li><img src="http://textarchive.ru/images/1017/2033152/690cd009.gif" name="Object9" align="ABSMIDDLE" width="68" height="20"> является решением данного ДУ на <code>(a,b)</code> т. е. <img src="http://textarchive.ru/images/1017/2033152/23bcfe3a.gif" name="Object11" align="ABSMIDDLE" width="312" height="61"></li>
+<li><img src="http://textarchive.ru/images/1017/2033152/690cd009.gif" name="Object9" align="ABSMIDDLE" width="68" height="20"> удовлетворяет заданным, начальным условиям: <img src="http://textarchive.ru/images/1017/2033152/eb47e81c.gif" name="Object13" align="ABSMIDDLE" width="314" height="26"></li>
+</ol>
+<p><strong>Теорема существования и единственности</strong></p>
+<p>Если 1) <img src="http://textarchive.ru/images/1017/2033152/9cd1df5f.gif" name="Object14" align="ABSMIDDLE" width="152" height="23"> непрерывна (по совокупности <code>(n+1)</code> аргументов) в области <img src="http://textarchive.ru/images/1017/2033152/d65675b9.gif" name="Object15" align="ABSMIDDLE" width="57" height="18"></p>
+<ol start="2" type="1">
+<li><img src="http://textarchive.ru/images/1017/2033152/6bcb4d56.gif" name="Object16" align="ABSMIDDLE" width="155" height="43"> непрерывны (по совокупности аргументов <img src="http://textarchive.ru/images/1017/2033152/8484effd.gif" name="Object17" align="ABSMIDDLE" width="129" height="22">) в <img src="http://textarchive.ru/images/1017/2033152/d65675b9.gif" name="Object18" align="ABSMIDDLE" width="57" height="18"> то <img src="http://textarchive.ru/images/1017/2033152/a247d55d.gif" name="Object19" align="ABSMIDDLE" width="20" height="18">! решение задачи Коши для ДУ <img src="http://textarchive.ru/images/1017/2033152/af24c372.gif" name="Object20" align="ABSMIDDLE" width="191" height="23">, удовлетворяющее заданным начальным условиям н/у: <img src="http://textarchive.ru/images/1017/2033152/4a6539d3.gif" name="Object22" align="ABSMIDDLE" width="316" height="26"> <img src="http://textarchive.ru/images/1017/2033152/f7b51933.gif" name="Object23" align="ABSMIDDLE" width="220" height="45"></li>
+</ol>
+<p>Область <code>D*</code> называется областью единственности ДУ.</p>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js' integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh' crossorigin='anonymous'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js' integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ' crossorigin='anonymous'></script>
+  </body>
+  </html>

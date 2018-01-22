@@ -1,0 +1,18 @@
+
+  <DOCTIPE html>
+  <head>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width, initial-scale=1, shrink-to-fit=no>
+  <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css integrity=sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb crossorigin=anonymous>
+  </head>
+  <body>
+  
+<h1 id="вопрос-18">Вопрос # 18</h1>
+<h2 id="метод-ломаных-эйлера-для-задачи-коши-для-одного-уравнения-1-го-порядка."><a href="https://studopedia.org/13-5218.html">Метод ломаных Эйлера для задачи Коши для одного уравнения 1-го порядка.</a></h2>
+<p>Рассмотрим задачу Коши для уравнения 1-го порядка:<br> <img src="http://konspekta.net/studopediaorg/baza13/17110462450.files/image1364.png" /><br> Будем искать численное решение уравнения на отрезке <code>[x0, b]</code>. Зададим на этом отрезке сетку <code>{xi, i = 0,1,…,N}</code>, таким образом, чтобы <code>x0&lt;x1&lt;...&lt;xN = b</code>. Введем обозначение для шага сетки <code>hi = xi+1 – xi, i = 0,…N–1</code>. Заменив производную в уравнении правой разностью, получим<br> <img src="http://konspekta.net/studopediaorg/baza13/17110462450.files/image1366.png" /><br> Известно, что <code>y0 = y(x0) = η</code>. Откуда можно найти все остальные значения <code>yi</code> по рекуррентной формуле:<br> <img src="http://konspekta.net/studopediaorg/baza13/17110462450.files/image1368.png" /><br> Данный метод нахождения численного решения называется методом Эйлера (или методом ломаных). Схемы, в которых значение функции явно выражается через уже найденные значения, называются явными, иначе – неявными. Таким образом, схема Эйлера является явной. Оценка погрешности для данного метода дает <code>O(max(hi))</code>, что предполагает малый шаг сетки для получения удовлетворительного решения.<br> На каждом из отрезков <code>[xi, xi+1]</code> полученное решение будет представлять собой отрезок прямой, проведенной через точку <code>(xi, yi)</code> с угловым коэффициентом <code>f(xi, yi)</code>. Такая геометрическая интерпретация решения объясняет второе название метода (метод ломаных).</p>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js' integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh' crossorigin='anonymous'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js' integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ' crossorigin='anonymous'></script>
+  </body>
+  </html>

@@ -1,0 +1,64 @@
+
+  <DOCTIPE html>
+  <head>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width, initial-scale=1, shrink-to-fit=no>
+  <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css integrity=sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb crossorigin=anonymous>
+  </head>
+  <body>
+  
+<h1 id="вопрос-7">Вопрос #7</h1>
+<h2 id="линейные-уравнения-порядка-выше-первого"><a href="http://matica.org.ua/metodichki-i-knigi-po-matematike/differentcialnye-uravneniia-vysshikh-poriadkov/3-1-lineinye-differentcialnye-uravneniia-vysshikh-poriadkov">Линейные уравнения порядка выше первого</a></h2>
+<p>Дифференциальное уравнение <code>n</code>-го порядка называется Линейным, если неизвестная функция и все ее производные входят в уравнение линейно, то есть если уравнение имеет вид</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image214.gif" /></p>
+<p>Где <code>a0(x)</code>, <code>a1(x)</code>, <code>...</code>, <code>an(x)</code> – некоторые функции независимой переменной, называемые коэффициентами дифференциального уравнения, а функция <code>g(x)</code> называется правой частью. Пусть все функции <code>ak(x) k=0..n</code>, <code>g(x)</code> непрерывны в интервале <code>[a,b]</code> и <code>a0(x)!=0</code></p>
+<p>Разделим уравнение <img src="http://matica.org.ua/images/stories/DU/image214.gif" /> почленно на коэффициент <code>a0(x)</code> при старшей производной и обозначим</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image224.gif" />, <img src="http://matica.org.ua/images/stories/DU/image225.gif" />, <img src="http://matica.org.ua/images/stories/DU/image226.gif" /></p>
+<p>Тогда уравнение <img src="http://matica.org.ua/images/stories/DU/image214.gif" /> примет вид</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image227.gif" /></p>
+<p>При этом все функции <code>pk(x) k=1..n</code> и <code>f(x)</code> непрерывны на <code>[a,b]</code></p>
+<p>Разрешим уравнение <img src="http://matica.org.ua/images/stories/DU/image227.gif" /> относительно <code>y^(n)</code></p>
+<p><img src="http://matica.org.ua/images/stories/DU/image230.gif" /></p>
+<p>Продифференцируем правую часть этого равенства по <code>y'</code>, <code>y''</code>, , <code>..</code>, <code>y^(n-1)</code>. Производные будут соответственно равны:</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image235.gif" />, <img src="http://matica.org.ua/images/stories/DU/image234.gif" />, <img src="http://matica.org.ua/images/stories/DU/image235.gif" /></p>
+<p>Поскольку эти функции непрерывны в <code>[a,b]</code>, то в силу теоремы Коши решение уравнения <img src="http://matica.org.ua/images/stories/DU/image227.gif" /> с начальными условиями <img src="http://matica.org.ua/images/stories/DU/image014.gif" /> существует и единственно.</p>
+<p>Если правые части уравнений <img src="http://matica.org.ua/images/stories/DU/image214.gif" /> и <img src="http://matica.org.ua/images/stories/DU/image227.gif" /> равны нулю, то линейные уравнения называются Однородными. Однородное линейное уравнение имеет вид:</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image236.gif" /></p>
+<p>Если же в уравнении <img src="http://matica.org.ua/images/stories/DU/image227.gif" /> <img src="http://matica.org.ua/images/stories/DU/image237.gif" />, то линейное уравнение называется Неоднородным.</p>
+<h2 id="линейный-дифференциальный-оператор-и-его-свойства"><a href="http://matica.org.ua/metodichki-i-knigi-po-matematike/differentcialnye-uravneniia-vysshikh-poriadkov/3-2-lineinyi-differentcialnyi-operator-i-ego-svoistva">Линейный дифференциальный оператор и его свойства</a></h2>
+<p>Пусть <code>L</code> – оператор, результат применения которого к некоторой <code>n</code> раз дифференцируемой функции <code>y(x)</code> дается формулой</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image239.gif" /></p>
+<p>Где <code>p1(x)</code>,<code>p2(x)</code>,<code>...</code>,<code>pn(x)</code> – некоторые функции.</p>
+<p>Этот оператор можно записать символически</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image244.gif" /></p>
+<p><strong>1</strong> Свойство аддитивности. Оператор от суммы функций равен сумме операторов от каждого слагаемого, то есть</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image245.gif" /></p>
+<p>Действительно,</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image246.gif" /> <img src="http://matica.org.ua/images/stories/DU/image247.gif" /> <img src="http://matica.org.ua/images/stories/DU/image248.gif" /></p>
+<p><strong>2</strong> Свойство однородности. Постоянный множитель можно выносить за знак оператора, то есть, если <code>c=const</code>, то</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image250.gif" /></p>
+<p>Имеем:</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image251.gif" /> <img src="http://matica.org.ua/images/stories/DU/image252.gif" /></p>
+<p>Из этих двух свойств следует, что оператор линейный. Поэтому оператор называется Линейным дифференциальным оператором.</p>
+<p>Следовательно, для любой линейной комбинации функций <code>y1</code>,<code>y2</code>,<code>...</code>,<code>ym</code> будет</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image256.gif" /></p>
+<p>Используя оператор и учитывая равенство <img src="http://matica.org.ua/images/stories/DU/image239.gif" />, представим неоднородное линейное дифференциальное уравнение <img src="http://matica.org.ua/images/stories/DU/image227.gif" /> в виде</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image257.gif" /></p>
+<p>Однородное линейное дифференциальное уравнение <img src="http://matica.org.ua/images/stories/DU/image236.gif" /> примет вид</p>
+<p><img src="http://matica.org.ua/images/stories/DU/image258.gif" /></p>
+<h2 id="свойства-решений-линейного-однородного-и-неоднородного-уранений-про-неоднороденое---хз-см-14.5.4"><a href="http://energy.bmstu.ru/gormath/mathan2s/lindu/lindu.htm#s104">Свойства решений линейного однородного <del>и неоднородного</del> уранений (про неоднороденое - ХЗ)</a> (см 14.5.4)</h2>
+<p><strong>Теорема о линейности пространства частных решений линейного однородного дифференциального уравнения.</strong> Множество частных решений линейного однородного дифференциального уравнения образует линейное пространство.</p>
+<p><strong>Док-во.</strong> Требуется доказать, что множество частных решений линейного однородного дифференциального линейного однородного уравнения, т.е. не менее n раз дифференцируемых функций <code>y(x)</code> для которых <code>Ln(y) = 0</code>, является линейным пространством. Для этого достаточно доказать, что если функции <code>y</code>, <code>y1(x)</code>, <code>y2(x)</code> - частные решения линейного однородного уравнения, то функции <code>Cy</code>, <code>y1(x) + y2(x)</code> - тоже частные решения линейного однородного уравнения. Действительно, пользуясь свойствами линейного дифференциального оператора, получим<br> если <code>Ln(y) = 0</code>, то <code>Ln(Cy) = CLn(y) = 0</code>;<br> если <code>Ln(y1) = 0</code> и <code>Ln(y2) = 0</code>, то <code>Ln(y1 + y2) = Ln(y1) + Ln(y2) = 0</code>.</p>
+<p><strong>Следствие.</strong> Если <code>y1(x)</code>, <code>y2(x)</code>, <code>…</code>, <code>yn(x)</code> - частные решения уравнения линейного однородного уравнения, то их линейная комбинация <code>C1 y1(x) + C2 y2(x) + …+ Cn yn(x)</code> - тоже частное решение этого уравнения.</p>
+<p><strong>Теорема</strong> Пусть <code>y1(x)</code>, <code>y2(x)</code>, <code>…</code>, <code>yn(x)</code> - частные решения линейного однородного дифференциального уравнения. Если определитель Вронского этой системы функций равен нулю в некоторой точке <img src="http://energy.bmstu.ru/gormath/mathan2s/lindu/Image1294.gif" />, то система функций <code>y1(x)</code>, <code>y2(x)</code>, <code>…</code>, <code>yn(x)</code> линейно зависима, и её определитель Вронского тождественно равен нулю на <code>(a, b)</code>.</p>
+<p><strong>Док-во.</strong> Пусть <img src="http://energy.bmstu.ru/gormath/mathan2s/lindu/Image1295.gif" /> . Тогда однородная система линейных алгебраических уравнений, для которой <code>W(x0)</code> является определителем</p>
+<p><img src="http://energy.bmstu.ru/gormath/mathan2s/lindu/Image1296.gif" /></p>
+<p>имеет нетривиальное решение относительно <code>C1</code>, <code>C2</code>, <code>…</code>, <code>Cn</code>. Рассмотрим линейную комбинацию функций <code>y1(x)</code>, <code>y2(x)</code>, <code>…</code>, <code>yn(x)</code> с этими коэффициентами <code>C1</code>, <code>C2</code>, <code>…</code>, <code>Cn</code>: <code>y(x) = C1 y1(x) + C2 y2(x) + …+ Cn yn(x)</code>. Эта функция удовлетворяет условию однородного линейного уравнения и, как следует из приведённой выше системы, имеет нулевые начальные условия в точке <code>x0</code>, т.е. является решением задачи Коши<br> <img src="http://energy.bmstu.ru/gormath/mathan2s/lindu/Image1298.gif" /><br> Этой же задаче Коши удовлетворяет и функция <code>y(x) = 0</code>, тождественно равная нулю на интервале <code>(a, b)</code>. Вследствие единственности решения задачи Коши <code>y(x) = C1 y1(x) + C2 y2(x) + …+ Cn yn(x) = 0</code> для <img src="http://energy.bmstu.ru/gormath/mathan2s/lindu/Image1249.gif" /> . Таким образом, система функций <code>y1(x)</code>, <code>y2(x)</code>, <code>…</code>, <code>yn(x)</code> линейно зависима на <code>(a, b)</code>, и по <strong>Теореме о вронскиане линейно зависимой системы</strong> её определитель Вронского тождественно равен нулю на <code>(a, b)</code>.</p>
+<p><strong>Теорема</strong> Если определитель Вронского <code>W(x)</code> системы <code>y1(x)</code>, <code>y2(x)</code>, <code>…</code>, <code>yn(x)</code> частных решений линейного однородного дифференциального уравнения отличен от нуля в некоторой точке <img src="http://energy.bmstu.ru/gormath/mathan2s/lindu/Image1294.gif" />, то <code>W(x)</code> отличен от нуля в любой точке этого интервала.</p>
+<p><strong>Док-во</strong> легко проводится от противного. Если предположить, что в некоторой точке <img src="http://energy.bmstu.ru/gormath/mathan2s/lindu/Image1301.gif" /> определитель Вронского равен нулю, то по предыдущей теореме он тождественно равен нулю на <code>(a, b)</code>, что противоречит условию <img src="http://energy.bmstu.ru/gormath/mathan2s/lindu/Image1302.gif" />.</p>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js' integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh' crossorigin='anonymous'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js' integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ' crossorigin='anonymous'></script>
+  </body>
+  </html>
